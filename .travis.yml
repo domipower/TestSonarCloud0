@@ -1,0 +1,10 @@
+language: java
+jdk:
+- openjdk11
+addons:
+ sonarcloud:
+  organization: "domipower"
+  token: "d5fc8b50df172da6afea8d0d4c18505c9137dc9a"
+script: 
+- ant build
+- sonar-scanner
